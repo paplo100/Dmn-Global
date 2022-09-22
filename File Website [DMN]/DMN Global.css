@@ -1,0 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+   
+}
+::-webkit-scrollbar-thumb{
+   background:orangered;
+  
+}
+::selection{
+    background-color: #000000;
+    color: orangered;
+}
+
+/* خط تخين و مايل font-family: 'DynaPuff', cursive; */
+/*خط STR  font-family: 'Bree Serif', serif;*/
+/*str2   font-family: 'Poppins', sans-serif;*/
+body{
+background: #050505;
+height: 217pc;
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+} /*play logo*/
+.logo{
+
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    height: 80px;
+    left: 30px;
+}
+a{
+    text-decoration: none;
+}
+.logo h1{
+    font-family: 'DynaPuff', cursive;
+    color: orangered;
+    position: relative;
+    font-size: 40px;
+    
+    top: 13px;
+}
+/*end logo*/
+/*play btn*/
+.btns{
+
+    width: 1000px;
+    height: 80px;
+    position: relative;
+text-align: right;
+top: -78px;
+left: 350px;
+}
+.btns button{
+    transition: 0.5s;
+    background-color: black;
+    color: orangered;
+    display: inline-block;
+    border: 1px solid orangered;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+    top: 16px;
+    border-radius: 5px;
+   height: 40px;
+    right: 10px;
+    
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btns button:hover{  
+    transition: 0.5s;
+    background: linear-gradient(to left, orangered,rgb(255, 79, 15));
+    color: black;
+  
+}
+#btnhome{
+animation: home 1.8s infinite;
+}
+/*end btn*/
+ /*////1//////////1////////1////1////1/////1/////1///1/////1//1////////1///*/
+@keyframes home{
+    10%{
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+    }
+    20%{
+        background-color: black;
+        color: orangered;
+        border: 1px solid orangered;
+    }
+}
+
+@media screen and (max-width:600px){
+    .logo{
+
+        display: inline-block;
+        width: 200px;
+        position: relative;
+
+        height: 80px;
+        left: -3px;
+    }
+    header{
+        background: rgb(0, 0, 0);
+    }
+
+body{
+    height: 300pc;
+}
+    .logo h1{
+        font-family: 'DynaPuff', cursive;
+        color: orangered;
+        position: relative;
+        font-size: 25px;
+        display: none;
+        top: 22px;
+    }
+
+    .btns{
+
+        width: 100%;
+        height: 80px;
+       
+        position: relative;
+    text-align: right;
+    top: -78px;
+left: -1px;
+    display: flex;
+    }
+    .btns button{
+        display: flex;
+        transition: 0.5s;
+        background-color: black;
+        color: orangered;
+        display: inline-block;
+        border: 1px solid orangered;
+        width: 160px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 2px;
+        top: 16px;
+        border-radius: 2px;
+       height: 35px;
+   left: 2px;
+        
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+}
+/*///////1//////////1////////1///////1///////1////////1////////1///////////*/
+
+/*play  mode & logo 2 */
+
+.solo{
+position: relative;
+width: 100%;
+height: 90px;
+background-color: rgb(0, 0, 0);
+top: -80px;
+}
+.solo #logo2{
+    color: orangered;
+    font-family: 'DynaPuff', cursive;
+    display: inline-block;
+    float: right;
+    font-size: 40px;
+    position: relative;
+    top: 17px;
+    cursor: pointer;
+    right: 50px;
+}
+#modhome1{
+    transition: 0.5s;
+    background-color: black;
+    color: orangered;
+    display: inline-block;
+    border: 1px solid orangered;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+    top: 16px;
+    border-radius: 5px;
+   height: 40px;
+   left: 18px;
+    top: 25px;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#modhome2{
+    transition: 0.5s;
+    background-color: black;
+    color: orangered;
+    display: inline-block;
+    border: 1px solid orangered;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+    top: 16px;
+    border-radius: 5px;
+   height: 40px;
+   left: 30px;
+    top: 25px;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#modhome1:hover{  
+    transition: 0.5s;
+    background: linear-gradient(to left, orangered,rgb(255, 79, 15));
+    color: black;
+  
+}
+
+#modhome2:hover{
+    transition: 0.5s;
+    background: linear-gradient(to left, orangered,rgb(255, 79, 15));
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+
+    .solo{
+        position: relative;
+        width: 100%;
+     
+        height: 90px;
+        background-color: rgb(0, 0, 0);
+        top:-90px;
+        }
+
+    .solo #logo2{
+        color: orangered;
+        font-family: 'DynaPuff', cursive;
+        display: none;
+        float: right;
+        font-size: 25px;
+        position: relative;
+        top: 35px;
+        cursor: pointer;
+        
+        right: 20px;
+    }
+
+    #modhome1{
+        transition: 0.5s;
+        background-color: black;
+        color: orangered;
+        display: inline-block;
+        border: 1px solid orangered;
+        width: 210px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 8px;
+        top: 16px;
+        border-radius: 5px;
+       height: 40px;
+       left: 26px;
+        top: 25px;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #modhome2{
+        transition: 0.5s;
+        background-color: black;
+        color: orangered;
+        display: inline-block;
+        border: 1px solid orangered;
+        width: 210px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 8px;
+        top: 16px;
+        border-radius: 5px;
+       height: 40px;
+       left: 40px;
+        top: 25px;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+}
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end header////////////////////////////////////////////////////////*/
+.put{
+    background-color: orangered;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 169px;
+   
+}
+.put h3{
+    font-size: 30px;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: right;
+    position: relative;
+    right: 30px;
+    top: 22px;
+}
+
+#socail{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #050505;
+    color: orangered;
+    position: relative;
+    left: 30px;
+    top: 8px;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+.social1 i:hover{
+    color: rgb(54, 54, 129);
+    transition:0.4s ;
+}
+.social2 i:hover{
+    color: rgb(68, 149, 255);
+    transition:0.4s ;
+}
+.social3 i:hover{
+    color: rgb(3, 102, 231);
+    transition:0.4s ;
+}
+
+.social4 i:hover{
+    color: rgb(255, 2, 2);
+    transition:0.4s ;
+}
+@media screen and (max-width:600px) {
+    .put{
+        background-color: orangered;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        top: 164px;
+       
+    }
+
+    .put h3{
+        font-size: 27px;
+        display: inline-block;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        float: right;
+        position: relative;
+        right: 17px;
+       
+        top: 22px;
+    }
+
+    #socail{
+        text-decoration: none;
+        display: inline-block;
+        background-color: #050505;
+        color: orangered;
+        position: relative;
+        left: 8px;
+        top: 9px;
+        font-size: 25px;
+        padding: 15px;
+        border-radius: 3px;
+        transition: 0.4s;
+    }
+
+}
+
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////end put////////////////////////////////////////////////////////*/
+#movies1{
+  background-color: #050505;
+    width: 100%;
+    position: relative;
+    height: 350px;
+    transition: 0.5s;
+    top: 152px;
+    margin-top: 30px;
+    display: flex;
+}
+.fm1{
+    background: linear-gradient(rgb(7, 2, 0),black);
+    width: 250px;
+    text-align: center;
+overflow: hidden;
+    height: 350px;
+    margin-left: 18px;
+    
+    transition: 0.5s;
+}
+.fm1 img{
+    width: 250px;
+    height: 350px;
+    transition: 0.5s;
+
+}
+.fm1:hover img{
+    rotate: -360deg;
+    filter: brightness(40%);
+    transition: 0.5s;
+    transform: scale(1.1);
+    animation: v 1s infinite;
+}
+
+@keyframes v{
+    10%{
+        transform: scale(1.1);
+    }
+    
+    }
+.fm1 i{
+    display: inline-block;
+    color: orangered;
+    font-size: 80px;
+    position: relative;
+    transition: 0.5s;
+    top: -430px;
+   
+    cursor: pointer;
+}
+.fm1:hover i{
+    position: relative;
+    top: -210px;
+    transition: 0.5s;
+}
+.fm1 #cv{
+    display: inline-block;
+    width: 190px;
+    position: relative;
+    border: none;
+    rotate: -30deg;
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    left: -60px;
+    top: -425px;
+}
+.fm1 #cv1{
+    display: inline-block;
+    width: 220px;
+    position: relative;
+    border: none;
+    
+    height: 35px;
+    background-color: orangered;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: 0.5s;
+   border-radius: 5px;
+   top: 325px;
+  
+}
+.fm1:hover #cv1{
+    transition: 0.5s;
+    position: relative;
+    top: -244px;
+}
+.fm1 #cv2{
+    display: inline-block;
+    width: 220px;
+    position: relative;
+    border: none;
+    
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: 0.9s;
+   border-radius: 5px;
+   top: 325px;
+   margin-top: 5px;
+}
+.fm1:hover #cv2{
+    transition: 0.9s;
+    position: relative;
+    top: -242px;
+}
+.fm1 .fontdd{
+    font-size: 10px;
+}
+.fm1 #cv3{
+    display: inline-block;
+    width: 230px;
+    position: relative;
+    border: none;
+    
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: 0.10s;
+   border-radius: 5px;
+   top: 325px;
+   margin-top: 5px;
+}
+.fm1:hover #cv3{
+    transition: 0.10s;
+    position: relative;
+    top: -240px;
+}
+
+@media screen and (max-width:600px){
+    
+    #movies1{
+        background-color: #050505;
+        width: 100%;
+        position: relative;
+        height: 350px;
+        top: 172px;
+       display: inline-block;
+        
+    }
+    .fm1{
+        background: linear-gradient(rgb(7, 2, 0),black);
+        width: 250px;
+        text-align: center;
+    overflow: hidden;
+        height: 350px;
+        margin-left: 15px;
+        position: relative;
+        left: 100px;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+}
